@@ -1,3 +1,6 @@
+#ifndef LIST_H
+#define LIST_H
+
 // List macros.
 
 #define OffsetOf(type, field) (size_t)&((type*)0)->field
@@ -11,3 +14,5 @@
 			&(cursor)->field != (listHead); \
 			(cursor) = ListEntry((cursor)->field.next, type, field))
 
+
+#endif
